@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Info. Table</title>
 </head>
 <link rel = "stylesheet" href = "table.css">
 <body>
 
-
-<h2>Form Information Table</h2>
+<h2>User Information Table</h2>
 
 <table>
   <tr>
@@ -21,6 +20,7 @@
   </tr>
 
   <?php
+
 // Connecting to the Database
 $servername = "localhost";
 $username = "root";
@@ -51,11 +51,12 @@ if($num> 0){
     while($row = mysqli_fetch_assoc($result)){
         // echo var_dump($row);
 
-        echo $row['sno'];  
-        echo "<td>". $row['name'] ."</td>";  
-        echo "<td>". $row['email'] ."</td>";  
-        echo "<td>" . $row['city'] ."</td>";  
-        echo "<td>" . $row['gender'] ."</td>";  
+        echo "<tr>"; 
+        echo "<td>". $row['Sr. Number'] ."</td>";  
+        echo "<td>". $row['Name'] ."</td>";  
+        echo "<td>". $row['Email'] ."</td>";  
+        echo "<td>" . $row['City'] ."</td>";  
+        echo "<td>" . $row['Gender'] ."</td>";  
         echo "</tr>"; 
 
     }
@@ -63,8 +64,6 @@ if($num> 0){
 
 }
 ?>
-
-
 
 </table>
 

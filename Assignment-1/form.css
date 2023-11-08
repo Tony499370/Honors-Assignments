@@ -28,7 +28,7 @@ body{
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .container form{
@@ -44,7 +44,7 @@ form .form-row .input-data{
   margin: 0 20px;
   position: relative;
 }
-/* form .form-row .textarea{
+form .form-row .textarea{
   height: 70px;
 }
 .input-data input,
@@ -77,7 +77,7 @@ form .form-row .input-data{
   width: 100%;
   bottom: 40px;
   background: #fff;
-} */
+}
 .input-data .underline{
   position: absolute;
   bottom: 0;
